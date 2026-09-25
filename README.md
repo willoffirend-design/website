@@ -30,7 +30,9 @@ python3 -m http.server 8000
 
 ## Deploy
 
-Upload the repository root to any static host (GitHub Pages, Netlify, Cloudflare Pages, Vercel). For GitHub Pages, go to **Settings → Pages**, choose **Deploy from a branch**, and select the branch with `/ (root)` as the folder.
+The site is published with GitHub Pages at <https://willoffirend-design.github.io/website/>, served straight from the root of the `main` branch (**Settings → Pages → Deploy from a branch → `main`, `/ (root)`**). Pages redeploys automatically on every push to `main`. `.nojekyll` tells Pages to serve the files exactly as they are.
+
+The repository root also works as-is on any other static host (Netlify, Cloudflare Pages, Vercel).
 
 ## Editing content
 
