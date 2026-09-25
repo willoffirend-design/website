@@ -30,11 +30,7 @@ python3 -m http.server 8000
 
 ## Deploy
 
-The site is published with GitHub Pages at <https://willoffirend-design.github.io/website/>.
-
-Every push to `main` runs `.github/workflows/deploy.yml`, which copies `main` to the `gh-pages` branch, and GitHub Pages serves that branch. Don't edit `gh-pages` directly, because the next deploy overwrites it. `.nojekyll` tells Pages to serve the files exactly as they are.
-
-If the site ever stops updating, go to **Settings → Pages** and check that the source is **Deploy from a branch** with `gh-pages` and `/ (root)` selected.
+The site is published with GitHub Pages at <https://willoffirend-design.github.io/website/>, served straight from the root of the `main` branch (**Settings → Pages → Deploy from a branch → `main`, `/ (root)`**). Pages redeploys automatically on every push to `main`. `.nojekyll` tells Pages to serve the files exactly as they are.
 
 The repository root also works as-is on any other static host (Netlify, Cloudflare Pages, Vercel).
 
